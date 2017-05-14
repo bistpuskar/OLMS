@@ -1,8 +1,8 @@
-package com.bhim.admin.dao;
+package com.binod.admin.dao;
 
 import java.util.List;
 
-import com.bhim.admin.entity.Notification;
+import com.binod.admin.entity.Notification;
 
 public interface NotificationDao {
 public List<Notification> getAllNotification();

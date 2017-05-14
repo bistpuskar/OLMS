@@ -1,6 +1,6 @@
-package com.bhim.admin.dao;
+package com.binod.admin.dao;
 
-import com.bhim.admin.entity.ReturnDateSetting;
+import com.binod.admin.entity.ReturnDateSetting;
 
 public interface ReturnDateSettingDao {
 public void updateDate(int returndate);

@@ -1,4 +1,4 @@
-package com.bhim.admin.bookCategoryServlet;
+package com.binod.admin.bookCategoryServlet;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bhim.admin.dao.BookCategoryDao;
-import com.bhim.admin.daoImpl.BookCategoryDaoImpl;
-import com.bhim.admin.entity.BookCategory;
+import com.binod.admin.dao.BookCategoryDao;
+import com.binod.admin.daoImpl.BookCategoryDaoImpl;
+import com.binod.admin.entity.BookCategory;
 @WebServlet(name="deleteBookCategory", urlPatterns="/deleteBookCategory")
 public class DeleteBookCategory extends HttpServlet{
 

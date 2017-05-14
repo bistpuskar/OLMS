@@ -1,4 +1,4 @@
-package com.bhim.admin.notification;
+package com.binod.admin.notification;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bhim.database.DBConnection;
+import com.binod.database.DBConnection;
 @WebServlet(name="notification",urlPatterns="/notification")
 public class UserNotification extends HttpServlet{
 

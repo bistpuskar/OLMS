@@ -1,8 +1,8 @@
-package com.bhim.admin.dao;
+package com.binod.admin.dao;
 
 import java.util.List;
 
-import com.bhim.admin.entity.User;
+import com.binod.admin.entity.User;
 
 public interface UserDao {
 	

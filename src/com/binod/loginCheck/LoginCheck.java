@@ -1,4 +1,4 @@
-package com.bhim.loginCheck;
+package com.binod.loginCheck;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,11 +11,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.bhim.admin.dao.BookIssueReturnDao;
-import com.bhim.admin.dao.UserDao;
-import com.bhim.admin.daoImpl.BookIssueReturnDaoImpl;
-import com.bhim.admin.daoImpl.UserDaoImpl;
-import com.bhim.admin.entity.User;
+import com.binod.admin.dao.BookIssueReturnDao;
+import com.binod.admin.dao.UserDao;
+import com.binod.admin.daoImpl.BookIssueReturnDaoImpl;
+import com.binod.admin.daoImpl.UserDaoImpl;
+import com.binod.admin.entity.User;
 
 @WebServlet(name = "logincheck", urlPatterns = "/logincheck")
 public class LoginCheck extends HttpServlet {

@@ -1,4 +1,4 @@
-package com.bhim.admin.bookCategoryServlet;
+package com.binod.admin.bookCategoryServlet;
 
 import java.io.IOException;
 
@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bhim.admin.dao.BookCategoryDao;
-import com.bhim.admin.daoImpl.BookCategoryDaoImpl;
+import com.binod.admin.dao.BookCategoryDao;
+import com.binod.admin.daoImpl.BookCategoryDaoImpl;
 @WebServlet(name="categoryid", urlPatterns="/categoryid")
 public class GetBookCategoryId extends HttpServlet{
 

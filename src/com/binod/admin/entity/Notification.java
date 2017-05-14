@@ -1,4 +1,4 @@
-package com.bhim.admin.entity;
+package com.binod.admin.entity;
 
 public class Notification {
 	private int id;

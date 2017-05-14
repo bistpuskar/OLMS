@@ -1,4 +1,4 @@
-package com.bhim.admin.notification;
+package com.binod.admin.notification;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,9 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bhim.admin.dao.NotificationDao;
-import com.bhim.admin.daoImpl.NotificationDaoImpl;
-import com.bhim.admin.entity.Notification;
+import com.binod.admin.dao.NotificationDao;
+import com.binod.admin.daoImpl.NotificationDaoImpl;
+import com.binod.admin.entity.Notification;
 
 @WebServlet(name = "deleteNotification", urlPatterns = "/deleteNotification")
 public class DeleteNotification extends HttpServlet {

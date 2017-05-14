@@ -1,4 +1,4 @@
-package com.bhim.admin.daoImpl;
+package com.binod.admin.daoImpl;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -8,12 +8,12 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.*;
 
-import com.bhim.admin.dao.BookDao;
-import com.bhim.admin.dao.ReturnDateSettingDao;
-import com.bhim.admin.entity.Book;
-import com.bhim.admin.entity.FineCalculation;
-import com.bhim.admin.entity.ReturnDateSetting;
-import com.bhim.database.DBConnection;
+import com.binod.admin.dao.BookDao;
+import com.binod.admin.dao.ReturnDateSettingDao;
+import com.binod.admin.entity.Book;
+import com.binod.admin.entity.FineCalculation;
+import com.binod.admin.entity.ReturnDateSetting;
+import com.binod.database.DBConnection;
 
 public class BookDaoImpl implements BookDao {
 	

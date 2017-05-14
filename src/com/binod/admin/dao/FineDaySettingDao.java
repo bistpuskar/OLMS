@@ -1,6 +1,6 @@
-package com.bhim.admin.dao;
+package com.binod.admin.dao;
 
-import com.bhim.admin.entity.FinePerDaySetting;
+import com.binod.admin.entity.FinePerDaySetting;
 
 public interface FineDaySettingDao {
 public void addFinePerDay(FinePerDaySetting setting);

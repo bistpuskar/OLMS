@@ -1,8 +1,8 @@
-package com.bhim.admin.dao;
+package com.binod.admin.dao;
 
 import java.util.List;
 
-import com.bhim.admin.entity.BookCategory;
+import com.binod.admin.entity.BookCategory;
 
 public interface BookCategoryDao {
 

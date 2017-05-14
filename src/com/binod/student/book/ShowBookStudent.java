@@ -1,4 +1,4 @@
-package com.bhim.student.book;
+package com.binod.student.book;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bhim.admin.dao.BookDao;
-import com.bhim.admin.daoImpl.BookDaoImpl;
-import com.bhim.admin.entity.Book;
+import com.binod.admin.dao.BookDao;
+import com.binod.admin.daoImpl.BookDaoImpl;
+import com.binod.admin.entity.Book;
 @WebServlet(name="sbook", urlPatterns="/sbook")
 public class ShowBookStudent extends HttpServlet{
 

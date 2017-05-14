@@ -1,4 +1,4 @@
-package com.bhim.admin.transactionServlet;
+package com.binod.admin.transactionServlet;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,9 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bhim.admin.dao.BookIssueReturnDao;
-import com.bhim.admin.daoImpl.BookIssueReturnDaoImpl;
-import com.bhim.admin.entity.Book;
+import com.binod.admin.dao.BookIssueReturnDao;
+import com.binod.admin.daoImpl.BookIssueReturnDaoImpl;
+import com.binod.admin.entity.Book;
 @WebServlet(name="returnBook", urlPatterns="/returnbooks")
 public class ReturnBook extends HttpServlet{
 

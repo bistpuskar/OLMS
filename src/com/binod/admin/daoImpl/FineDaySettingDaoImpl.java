@@ -1,4 +1,4 @@
-package com.bhim.admin.daoImpl;
+package com.binod.admin.daoImpl;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -6,9 +6,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.bhim.admin.dao.FineDaySettingDao;
-import com.bhim.admin.entity.FinePerDaySetting;
-import com.bhim.database.DBConnection;
+import com.binod.admin.dao.FineDaySettingDao;
+import com.binod.admin.entity.FinePerDaySetting;
+import com.binod.database.DBConnection;
 
 public class FineDaySettingDaoImpl implements FineDaySettingDao {
 	DBConnection dbConnection = new DBConnection();

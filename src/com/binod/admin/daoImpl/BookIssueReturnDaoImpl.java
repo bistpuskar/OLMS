@@ -1,4 +1,4 @@
-package com.bhim.admin.daoImpl;
+package com.binod.admin.daoImpl;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -9,12 +9,12 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import com.bhim.admin.dao.BookIssueReturnDao;
-import com.bhim.admin.dao.FineDaySettingDao;
-import com.bhim.admin.entity.Book;
-import com.bhim.admin.entity.FinePerDaySetting;
-import com.bhim.admin.entity.User;
-import com.bhim.database.DBConnection;
+import com.binod.admin.dao.BookIssueReturnDao;
+import com.binod.admin.dao.FineDaySettingDao;
+import com.binod.admin.entity.Book;
+import com.binod.admin.entity.FinePerDaySetting;
+import com.binod.admin.entity.User;
+import com.binod.database.DBConnection;
 
 public class BookIssueReturnDaoImpl implements BookIssueReturnDao {
 	DBConnection dbConnection = new DBConnection();

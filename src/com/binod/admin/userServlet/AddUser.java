@@ -1,4 +1,4 @@
-package com.bhim.admin.userServlet;
+package com.binod.admin.userServlet;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bhim.admin.dao.UserDao;
-import com.bhim.admin.daoImpl.UserDaoImpl;
-import com.bhim.admin.entity.User;
+import com.binod.admin.dao.UserDao;
+import com.binod.admin.daoImpl.UserDaoImpl;
+import com.binod.admin.entity.User;
 @WebServlet(name="addUser", urlPatterns="/adduser")
 public class AddUser extends HttpServlet {
 

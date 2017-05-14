@@ -1,4 +1,4 @@
-package com.bhim.database;
+package com.binod.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

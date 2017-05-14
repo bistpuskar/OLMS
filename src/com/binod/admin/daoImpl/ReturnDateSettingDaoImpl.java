@@ -1,12 +1,12 @@
-package com.bhim.admin.daoImpl;
+package com.binod.admin.daoImpl;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.bhim.admin.dao.ReturnDateSettingDao;
-import com.bhim.admin.entity.ReturnDateSetting;
-import com.bhim.database.DBConnection;
+import com.binod.admin.dao.ReturnDateSettingDao;
+import com.binod.admin.entity.ReturnDateSetting;
+import com.binod.database.DBConnection;
 
 public class ReturnDateSettingDaoImpl implements ReturnDateSettingDao{
 DBConnection dbConnection=new DBConnection();

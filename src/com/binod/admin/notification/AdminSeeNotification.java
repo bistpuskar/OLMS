@@ -1,4 +1,4 @@
-package com.bhim.admin.notification;
+package com.binod.admin.notification;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
@@ -13,10 +13,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bhim.admin.dao.NotificationDao;
-import com.bhim.admin.daoImpl.NotificationDaoImpl;
-import com.bhim.admin.entity.Notification;
-import com.bhim.database.DBConnection;
+import com.binod.admin.dao.NotificationDao;
+import com.binod.admin.daoImpl.NotificationDaoImpl;
+import com.binod.admin.entity.Notification;
+import com.binod.database.DBConnection;
 
 @WebServlet(name = "seenotification", urlPatterns = "/seenotification")
 public class AdminSeeNotification extends HttpServlet {

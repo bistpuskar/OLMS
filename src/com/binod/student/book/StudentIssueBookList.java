@@ -1,4 +1,4 @@
-package com.bhim.student.book;
+package com.binod.student.book;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bhim.admin.dao.BookIssueReturnDao;
-import com.bhim.admin.daoImpl.BookIssueReturnDaoImpl;
+import com.binod.admin.dao.BookIssueReturnDao;
+import com.binod.admin.daoImpl.BookIssueReturnDaoImpl;
 @WebServlet(name="SBooklist",urlPatterns="/SBooklist")
 public class StudentIssueBookList extends HttpServlet{
 

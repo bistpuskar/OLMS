@@ -1,4 +1,4 @@
-package com.bhim.admin.dashboard;
+package com.binod.admin.dashboard;
 
 import java.io.IOException;
 
@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bhim.admin.dao.UserDao;
-import com.bhim.admin.daoImpl.UserDaoImpl;
+import com.binod.admin.dao.UserDao;
+import com.binod.admin.daoImpl.UserDaoImpl;
 @WebServlet(name="counts",urlPatterns="/counts")
 public class CountRecord extends HttpServlet {
 

@@ -1,4 +1,4 @@
-package com.bhim.admin.settingServlet;
+package com.binod.admin.settingServlet;
 
 import java.io.IOException;
 
@@ -8,9 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bhim.admin.dao.ReturnDateSettingDao;
-import com.bhim.admin.daoImpl.ReturnDateSettingDaoImpl;
-import com.bhim.admin.entity.ReturnDateSetting;
+import com.binod.admin.dao.ReturnDateSettingDao;
+import com.binod.admin.daoImpl.ReturnDateSettingDaoImpl;
+import com.binod.admin.entity.ReturnDateSetting;
 
 @WebServlet(name = "returndate", urlPatterns = "/returndate")
 public class ShowReturnDate extends HttpServlet {

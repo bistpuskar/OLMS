@@ -1,4 +1,4 @@
-package com.bhim.admin.bookServlet;
+package com.binod.admin.bookServlet;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,11 +9,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bhim.admin.dao.BookCategoryDao;
-import com.bhim.admin.dao.BookDao;
-import com.bhim.admin.daoImpl.BookCategoryDaoImpl;
-import com.bhim.admin.daoImpl.BookDaoImpl;
-import com.bhim.admin.entity.BookCategory;
+import com.binod.admin.dao.BookCategoryDao;
+import com.binod.admin.dao.BookDao;
+import com.binod.admin.daoImpl.BookCategoryDaoImpl;
+import com.binod.admin.daoImpl.BookDaoImpl;
+import com.binod.admin.entity.BookCategory;
 @WebServlet(name="bookid",urlPatterns="/bookid")
 public class GetBookId extends HttpServlet {
 

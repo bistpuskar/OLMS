@@ -1,4 +1,4 @@
-package com.bhim.admin.settingServlet;
+package com.binod.admin.settingServlet;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bhim.admin.dao.FineDaySettingDao;
-import com.bhim.admin.daoImpl.FineDaySettingDaoImpl;
-import com.bhim.admin.entity.FinePerDaySetting;
+import com.binod.admin.dao.FineDaySettingDao;
+import com.binod.admin.daoImpl.FineDaySettingDaoImpl;
+import com.binod.admin.entity.FinePerDaySetting;
 @WebServlet(name="finedate", urlPatterns="/fineperday")
 public class FinePerDay  extends HttpServlet{
 
