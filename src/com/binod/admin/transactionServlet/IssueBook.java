@@ -39,18 +39,34 @@ public class IssueBook extends HttpServlet {
 		req.setAttribute("issuelist", lists);
 
 		// form member name and ids
-
 		if (user.isValid()) {
 			req.setAttribute("user", req.getParameter("names"));
 			req.setAttribute("ids", req.getParameter("id").trim());
 			req.getRequestDispatcher("admin/transaction/newIssueBook.jsp").forward(req, resp);
-		} else {
+		}
+		
+		else {
 			String message = "Your already issue 5 Book";
 			req.setAttribute("messag", message);
 			req.setAttribute("user", req.getParameter("names"));
 			req.setAttribute("ids", req.getParameter("id").trim());
 			req.getRequestDispatcher("admin/transaction/newIssueBook.jsp").forward(req, resp);
+			
 		}
+		
+		if(user.isValid2()){
+			req.setAttribute("user", req.getParameter("names"));
+			req.setAttribute("ids", req.getParameter("id").trim());
+			req.getRequestDispatcher("admin/transaction/newIssueBook.jsp").forward(req, resp);
+		}
+		else{
+			String message = "This book is already issued....";
+			req.setAttribute("messag", message);
+			req.setAttribute("user", req.getParameter("names"));
+			req.setAttribute("ids", req.getParameter("id").trim());
+			req.getRequestDispatcher("admin/transaction/newIssueBook.jsp").forward(req, resp);
+		}
+	
 	}
 
 }

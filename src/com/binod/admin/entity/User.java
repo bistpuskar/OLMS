@@ -2,8 +2,19 @@ package com.binod.admin.entity;
 
 public class User {
 	private boolean valid;
+	private boolean valid2;
 	private int id;
 	private String username, password, usertype, firstname, lastname, email, address, gender, registerdate, expiredate;
+
+	
+	
+	public boolean isValid2() {
+		return valid2;
+	}
+
+	public void setValid2(boolean valid2) {
+		this.valid2 = valid2;
+	}
 
 	public String getUsertype() {
 		return usertype;

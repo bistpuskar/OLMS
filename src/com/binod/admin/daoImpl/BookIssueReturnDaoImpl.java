@@ -22,52 +22,71 @@ public class BookIssueReturnDaoImpl implements BookIssueReturnDao {
 	@Override
 	public void issueNewBook(Book book, User user) {
 		
-		String issuelist="select count(*) from `transaction` where `memberid`=?";
-		int booklist=0;
+		String issuelist = "select count(*) from `transaction` where `memberid`=?";
+		int booklist = 0;
+		int bookname = 0;
+		String query1 = "select * from `transaction` where `memberid`=?";
 		ResultSet resultSet;
+		ResultSet resultSet2;
+
 		try {
 			dbConnection.open();
-			PreparedStatement preparedStatement=dbConnection.getPreparedStatement(issuelist);
+			PreparedStatement preparedStatement = dbConnection.getPreparedStatement(issuelist);
+			PreparedStatement preparedStatement2 = dbConnection.getPreparedStatement(query1);
+			preparedStatement2.setInt(1, user.getId());
 			preparedStatement.setInt(1, user.getId());
-			resultSet=preparedStatement.executeQuery();
-			
-			while(resultSet.next()){
-				booklist=resultSet.getInt("count(*)");
+			resultSet = preparedStatement.executeQuery();
+			resultSet2 = preparedStatement2.executeQuery();
+
+			while (resultSet.next()) {
+				booklist = resultSet.getInt("count(*)");
 			}
-			
+
+			while (resultSet2.next()) {
+				bookname = resultSet2.getInt("bookid");
+
+			}
+
 		} catch (ClassNotFoundException | SQLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		
-		System.out.println("your issue book list are"+booklist);
-		
-		if(booklist>4){
-			System.out.println("sorry you already issue 5 book");
-			user.setValid(false);
-		}
-		else{
-		String query="insert into `transaction` (`issuedate`,`returndate`,`bookid`,`memberid`) values(?,?,?,?)";
-		//String query = "insert into `transaction` (`issuedate`,`returndate`,`bookid`) values(?,?,?)";
-		 
-		 try {
-			dbConnection.open();
-			PreparedStatement preparedStatement = dbConnection.getPreparedStatement(query);
-			preparedStatement.setString(1, book.getIssuedate());
-			preparedStatement.setString(2, book.getReturndate());
-			preparedStatement.setInt(3, book.getB_id());
-			 preparedStatement.setInt(4, user.getId());
-			preparedStatement.executeUpdate();
-			user.setValid(true);
 
-		} catch (ClassNotFoundException | SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		}
+		System.out.println("your issue book list are" + booklist);
+		if (bookname == book.getB_id()) {
+			System.out.println("already registered...");
+			user.setValid2(false);
+			
+			
+		} else{
 
+			if (booklist > 4) {
+				System.out.println("sorry you already issue 5 book");
+				user.setValid(false);
+			}
+
+			else {
+				String query = "insert into `transaction` (`issuedate`,`returndate`,`bookid`,`memberid`) values(?,?,?,?)";
+				// String query = "insert into `transaction`
+				// (`issuedate`,`returndate`,`bookid`) values(?,?,?)";
+
+				try {
+					dbConnection.open();
+					PreparedStatement preparedStatement = dbConnection.getPreparedStatement(query);
+					preparedStatement.setString(1, book.getIssuedate());
+					preparedStatement.setString(2, book.getReturndate());
+					preparedStatement.setInt(3, book.getB_id());
+					preparedStatement.setInt(4, user.getId());
+					preparedStatement.executeUpdate();
+					user.setValid(true);
+
+				} catch (ClassNotFoundException | SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
 	}
-
 	@Override
 	public List<Book> getIssuedBook(int user_id) {
 		long fine, fineDay;
